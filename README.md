@@ -1,6 +1,7 @@
 # Express-APIs
 
 # Requirements - 
+
 Take the following gist in consideration:
 
 https://gist.github.com/joaofs/a6b80ce482de2f3846a00e72c0497a35
@@ -14,3 +15,8 @@ This is a list of premier league football teams. This is the dataset to be used 
 3 - Now, /teams should also be able to receive a payload allowing a team to be created.
 
 4 - On a different action, if a team already exists, /teams should update the image of the team.
+
+
+# Solution - 
+
+Designed REST APIs using Express Node.JS Framework. The idea was to read and write into 
