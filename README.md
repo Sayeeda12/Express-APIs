@@ -29,4 +29,8 @@ Simply clone the repository -> navigate to Express-APIs folder in your command l
 
 The application will now start the server.
 
-
+# Restrictions - 
+ 
+ 1. Team name must be a string
+ 2. Team image must be a URL
+ 3.  
