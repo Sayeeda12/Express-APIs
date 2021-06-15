@@ -1,10 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 const utils = require("./utils");
-var teamData = require('../data/football.json'); //Not a const because we'll be deleting objects from it too
 
 //Set the right file path based on environment
 process.env.FILE_PATH = (process.env.FILE_PATH == undefined) ? '../data/football.json' : process.env.FILE_PATH;
+
+var teamData = require(process.env.FILE_PATH); //Not a const because we'll be deleting objects from it too
 
 module.exports = {
     get: function(teamName) {

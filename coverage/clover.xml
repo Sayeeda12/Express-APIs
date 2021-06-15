@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1623756310293" clover="3.2.0">
-  <project timestamp="1623756310293" name="All files">
+<coverage generated="1623756882998" clover="3.2.0">
+  <project timestamp="1623756882998" name="All files">
     <metrics statements="60" coveredstatements="60" conditionals="34" coveredconditionals="30" methods="24" coveredmethods="24" elements="118" coveredelements="114" complexity="0" loc="60" ncloc="60" packages="1" files="3" classes="3"/>
     <file name="app.js" path="/Users/I328501/git/Express-APIs/public/js/app.js">
       <metrics statements="25" coveredstatements="25" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
@@ -35,36 +35,36 @@
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="7" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="13" count="81" type="stmt"/>
-      <line num="14" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="21" count="3" type="stmt"/>
-      <line num="23" count="29" type="cond" truecount="4" falsecount="0"/>
-      <line num="24" count="2" type="stmt"/>
-      <line num="26" count="1" type="stmt"/>
-      <line num="28" count="1" type="stmt"/>
-      <line num="29" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="31" count="1" type="stmt"/>
-      <line num="38" count="3" type="stmt"/>
-      <line num="40" count="63" type="cond" truecount="6" falsecount="0"/>
-      <line num="42" count="21" type="stmt"/>
-      <line num="43" count="1" type="stmt"/>
-      <line num="45" count="1" type="stmt"/>
-      <line num="46" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="48" count="1" type="stmt"/>
-      <line num="52" count="2" type="stmt"/>
-      <line num="58" count="2" type="stmt"/>
-      <line num="60" count="2" type="stmt"/>
-      <line num="61" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="62" count="1" type="stmt"/>
-      <line num="64" count="21" type="stmt"/>
-      <line num="66" count="1" type="stmt"/>
-      <line num="67" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="69" count="1" type="stmt"/>
+      <line num="6" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="13" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="81" type="stmt"/>
+      <line num="15" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="24" count="29" type="cond" truecount="4" falsecount="0"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="30" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="39" count="3" type="stmt"/>
+      <line num="41" count="63" type="cond" truecount="6" falsecount="0"/>
+      <line num="43" count="21" type="stmt"/>
+      <line num="44" count="1" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="47" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="53" count="2" type="stmt"/>
+      <line num="59" count="2" type="stmt"/>
+      <line num="61" count="2" type="stmt"/>
+      <line num="62" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="63" count="1" type="stmt"/>
+      <line num="65" count="21" type="stmt"/>
+      <line num="67" count="1" type="stmt"/>
+      <line num="68" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="70" count="1" type="stmt"/>
     </file>
     <file name="utils.js" path="/Users/I328501/git/Express-APIs/public/js/utils.js">
       <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
