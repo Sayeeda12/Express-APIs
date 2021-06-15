@@ -3,6 +3,9 @@ const path = require('path');
 const utils = require("./utils");
 var teamData = require('../data/football.json'); //Not a const because we'll be deleting objects from it too
 
+//Set the right file path based on environment
+process.env.FILE_PATH = (process.env.FILE_PATH == undefined) ? '../data/football.json' : process.env.FILE_PATH;
+
 module.exports = {
     get: function(teamName) {
         //Read the file directly and return the json object based on API Call (all teams or a single team)
