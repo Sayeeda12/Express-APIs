@@ -19,4 +19,14 @@ This is a list of premier league football teams. This is the dataset to be used 
 
 # Solution - 
 
-Designed REST APIs using Express Node.JS Framework. The idea was to read and write into 
+Designed REST APIs using Express Node.JS Framework. The idea was to read from and write into a sample JSON file using 'fs' module of node.
+
+This also contains unit tests written for the APIs and functions using JEST.
+
+# How to test -
+
+Simply clone the repository -> navigate to Express-APIs folder in your command line -> run the command "npm start".
+
+The application will now start the server.
+
+
