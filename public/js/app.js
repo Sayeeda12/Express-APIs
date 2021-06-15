@@ -34,7 +34,7 @@ app.put("/teams/:team_name",
         (request, response) => {
             //Validate the input
             let errors = validationResult(request);
-            if(!errors.isEmpty)
+            if(!errors.isEmpty())
                 response.status(400).send({response: errors.array()});
             else{
                 //Once validation is complete, update the image if the team exists
