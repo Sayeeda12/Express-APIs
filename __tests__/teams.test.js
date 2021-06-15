@@ -48,6 +48,10 @@ const teamCreated = {response: "Team 'Team1' created successfully"};
 const duplicateNameRequest = {name: "Arsenal", img: "https://google.com"};
 const duplicateImageRequest = {name: "Team1", img: "https://s3-eu-west-1.amazonaws.com/inconbucket/images/entities/original/639.jpg"};
 const teamExists = {response: "Provide a different name/img. The given name/img already exists"};
+const teamWithInvalidURL = {name: "Team1", img: "wrongURL"};
+const teamWithInvalidName = {name: 1, img: "https://trial.com"};
+const invalidImgURLError = {response: [{"location": "body", "msg": "Invalid value", "param": "img", "value": "wrongURL"}]};
+const invalidINameError = {response: [{"location": "body", "msg": "Invalid value", "param": "name", "value": 1}]};
 
 test('Create a team without name', async () => {
     await request(app).post('/teams')
@@ -64,6 +68,24 @@ test('Create a team without image', async () => {
     .expect(400)
     .then(response => {
         expect(JSON.parse(response.text)).toStrictEqual(invalidImgError);
+    });
+});
+
+test('Create a team with an invalid image URL', async () => {
+    await request(app).post('/teams')
+    .send(teamWithInvalidURL)
+    .expect(400)
+    .then(response => {
+        expect(JSON.parse(response.text)).toStrictEqual(invalidImgURLError);
+    });
+});
+
+test('Create a team with an invalid name', async () => {
+    await request(app).post('/teams')
+    .send(teamWithInvalidName)
+    .expect(400)
+    .then(response => {
+        expect(JSON.parse(response.text)).toStrictEqual(invalidINameError);
     });
 });
 
@@ -99,6 +121,7 @@ test('Create a team successfully', async () => {
  */
 const updateRequest = {img: "https://google.com"};
 const updateRequestWithExistingImage = {img: "https://s3-eu-west-1.amazonaws.com/inconbucket/images/entities/original/631.jpg"};
+const updateRequestWithInvalidURL = {img: "wrongURL"};
 const updateSuccessResponse = {response: "Team 'Team1' updated successfully"};
 const updateError = {response: "Either the given team name doesn't exist or the given image already exists"};
 
@@ -117,6 +140,15 @@ test('Update a team with an existing image', async () => {
     .expect(400)
     .then(response => {
         expect(JSON.parse(response.text)).toStrictEqual(updateError);
+    });
+});
+
+test('Update a team with an invalid image URL', async () => {
+    await request(app).put('/teams/Team1')
+    .send(updateRequestWithInvalidURL)
+    .expect(400)
+    .then(response => {
+        expect(JSON.parse(response.text)).toStrictEqual(invalidImgURLError);
     });
 });
 
