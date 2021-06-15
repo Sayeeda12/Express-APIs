@@ -27,7 +27,7 @@ This also contains unit tests written for the APIs and functions using JEST.
 
 Simply clone the repository -> navigate to Express-APIs folder in your command line -> run the command **"npm start"**.
 
-The application will now start the server.
+The application will now start the server. You can run your tests (Recommend using Postman for better readability)
 
 You can check unit test coverages by running the command **"npm run test"**
 
