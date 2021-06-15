@@ -25,12 +25,18 @@ This also contains unit tests written for the APIs and functions using JEST.
 
 # How to test -
 
-Simply clone the repository -> navigate to Express-APIs folder in your command line -> run the command "npm start".
+Simply clone the repository -> navigate to Express-APIs folder in your command line -> run the command **"npm start"**.
 
 The application will now start the server.
+
+You can check unit test coverages by running the command **"npm run test"**
+
+Find the report under coverage -> lcov-report -> index.html
 
 # Restrictions - 
  
  1. Team name must be a string
  2. Team image must be a URL
- 3.  
+ 3. No duplicate names and images are allowed
+ 
+
